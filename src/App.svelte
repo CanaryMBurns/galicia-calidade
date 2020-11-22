@@ -1,33 +1,19 @@
 <script>
-	import Form from './components/Form.svelte';
-	import Table from './components/Table.svelte';	
-
-	export let name;
+	import Table from './components/Table.svelte';
 </script>
 
 <main>
-	<Form/>
 	<Table/>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 2rem;
+	background-color: #f5bfad;
+}
 </style>
